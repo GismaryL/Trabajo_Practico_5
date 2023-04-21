@@ -41,29 +41,24 @@ private List<String> LeerArchivo(String rutaArchivo) {
 		List<String> lineas = new ArrayList<String>();
 		
 		try {
-			// Apertura del fichero y creacion de BufferedReader para poder
-			// hacer una lectura comoda (disponer del metodo readLine()).
+			
 			
 			archivo = new File(rutaArchivo);
 			lectorArchivo = new FileReader(archivo);
 			lectorBuffer = new BufferedReader(lectorArchivo);
 			
-			//Lectura del fichero
 			
 			String linea = "";
 			
 			while( (linea = lectorBuffer.readLine() ) != null) {
-				//System.out.println(linea);
+				
 				lineas.add(linea);
 			}
 			
 		}catch(Exception e) {
 			e.printStackTrace();
 		}finally {
-			 // En el finally cerramos el fichero, para asegurarnos
-	         // que se cierra tanto si todo va bien como si salta 
-	         // una excepcion.
-			
+		
 			try {
 				if(lectorBuffer != null) {
 					lectorBuffer.close();

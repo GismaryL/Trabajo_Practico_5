@@ -24,11 +24,6 @@ public class DescuentoFijo extends Descuento {
 		
 	}
 
-	
-
-	
-
-
 
 }
 

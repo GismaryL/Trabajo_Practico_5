@@ -4,13 +4,13 @@ public class CarritoCompras {
 
 
 	public static void main(String[] args) {
-		//INSTANCIAMOS A LA CLASE PRODUCTO
+		
 		Producto prod1 = new Producto(100, "Jugo", 530.50, "Jugo de Naranja Caja x 1l",100);
 		Producto prod2 = new Producto(101, "Queso Crema", 460.80, "Filandia x 300gr",100);
 		Producto prod3 = new Producto(102, "Fideos", 230.50,"Paquete x 500gr",200);
 
 		
-		//EJEMPPLARIZAMOS A LA CLASE PERSONA
+		
 		Cliente per1 = new Cliente(26638449,"Gismary Laya","Dock Sud 2515","11 66574878","gismarylo25012gmail.com");
 			
 	
@@ -33,11 +33,8 @@ public class CarritoCompras {
 		
 		
 		DescuentoPorcentaje desc1 = new DescuentoPorcentaje ("Descuento por pago en efectivo","Efectivo",0.20);
-		//carro.setDescPorc(desc1);
-		//System.out.println(carro.getDescPorc().getTipo());
+		
 		DescuentoFijo desc2 = new DescuentoFijo ("Descuento por cupon","Cupon",200.00);
-		//carro.setCupDesc(desc2);
-		//System.out.println(carro.getCupDesc());
 		
 	
 		if (desc1.dameTipo()=="Efectivo") {
@@ -58,7 +55,6 @@ public class CarritoCompras {
 			
 			} 
 				
-		
 									
 }
 	
